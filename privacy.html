@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-lang="ja">プライバシーポリシー – Web Monitor RSS</title>
+  <title data-lang="en">Privacy Policy – Web Monitor RSS</title>
+  <meta name="description" content="Web Monitor RSS プライバシーポリシー。収集するのは利用者が選択した要素の値のみで、開発者には送信されません。">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="lang-bar">
+  <button class="lang-btn active" onclick="setLang('ja')" id="btn-ja">日本語</button>
+  <button class="lang-btn"        onclick="setLang('en')" id="btn-en">English</button>
+</div>
+
+<header class="site-header">
+  <div class="app-icon"><img src="assets/app-icon.png" alt="Web Monitor RSS" width="96" height="96" style="border-radius:22px;"></div>
+  <h1>
+    <span data-lang="ja">プライバシーポリシー</span>
+    <span data-lang="en">Privacy Policy</span>
+  </h1>
+  <p class="tagline">
+    <span data-lang="ja">開発者は利用者のデータを一切受け取りません</span>
+    <span data-lang="en">The developer never receives any of your data</span>
+  </p>
+</header>
+
+<main>
+<section>
+<div class="container">
+
+  <p style="color: var(--ink-faint); font-size: 0.84rem; margin-bottom: 36px;">
+    <span data-lang="ja">最終更新日：2026年9月11日</span>
+    <span data-lang="en">Last updated: September 11, 2026</span>
+  </p>
+
+  <div class="highlight-box">
+    <span data-lang="ja">Web Monitor RSSは自己ホスト型のオープンソースソフトウェアです。拡張機能が収集するデータは、利用者ご自身が設定したバックエンド（ご自身のCloudflareアカウント）にのみ送信され、開発者（Margherita Works）のサーバーには一切送信されません。</span>
+    <span data-lang="en">Web Monitor RSS is self-hosted, open-source software. Data the extension collects is sent only to the backend you configure yourself (your own Cloudflare account) — never to any server operated by the developer (Margherita Works).</span>
+  </div>
+
+  <div class="policy-section">
+    <h2>
+      <span data-lang="ja">1. アーキテクチャについて（重要）</span>
+      <span data-lang="en">1. About This Architecture (Important)</span>
+    </h2>
+    <p><span data-lang="ja">この拡張機能には中央サーバーがありません。利用者は<a href="https://github.com/isitest1/web-monitor-rss">オープンソースのバックエンド</a>をご自身のCloudflareアカウントにデプロイし、拡張機能のオプション画面でそのURLとトークンを設定します。拡張機能が送信するすべてのデータは、この利用者自身のバックエンドにのみ届きます。開発者は利用者がどのURLを設定したかも、そこに何が送信されたかも一切知ることができません。</span><span data-lang="en">This extension has no central server. You deploy the <a href="https://github.com/isitest1/web-monitor-rss">open-source backend</a> to your own Cloudflare account and configure its URL and a token in the extension's options page. Everything the extension sends goes only to that backend of yours. The developer has no visibility into what URL you configured or what was sent to it.</span></p>
+  </div>
+
+  <div class="policy-section">
+    <h2>
+      <span data-lang="ja">2. 収集する情報</span>
+      <span data-lang="en">2. Information Collected</span>
+    </h2>
+    <p><span data-lang="ja">拡張機能が扱うのは以下のみです：</span><span data-lang="en">The extension handles only:</span></p>
+    <ul>
+      <li data-lang="ja">利用者がVisual Selectorでクリックして選択した、ページ内の特定要素のテキスト・HTML（明示的に有効化した場合のみ）・属性値・リンクURL・画像URL</li>
+      <li data-lang="en">The text, HTML (only if you explicitly enable it), attribute value, link URL, or image URL of the specific page element(s) you click to select with the Visual Selector</li>
+      <li data-lang="ja">拡張機能の設定（バックエンドのURLとAPIトークン）— 拡張機能のローカルストレージにのみ保存</li>
+      <li data-lang="en">The extension's own settings (backend URL and API token) — stored only in the extension's local storage</li>
+    </ul>
+    <p><span data-lang="ja">以下は一切収集・保存しません：</span><span data-lang="en">The extension never collects or stores:</span></p>
+    <ul>
+      <li data-lang="ja">ページ全体のHTML</li>
+      <li data-lang="en">Full page HTML</li>
+      <li data-lang="ja">Cookie、ログイン情報、認証セッション</li>
+      <li data-lang="en">Cookies, login credentials, or authentication sessions</li>
+      <li data-lang="ja">閲覧履歴、利用状況の分析データ</li>
+      <li data-lang="en">Browsing history or usage analytics</li>
+    </ul>
+  </div>
+
+  <div class="policy-section">
+    <h2>
+      <span data-lang="ja">3. データの送信先</span>
+      <span data-lang="en">3. Where Data Is Sent</span>
+    </h2>
+    <p><span data-lang="ja">選択した要素の値は、利用者がオプション画面で設定したバックエンドURLへ、設定したトークンで認証された上で送信されます。それ以外の宛先へ送信されることはありません。アナリティクスSDK・広告SDK・トラッキングSDKは組み込まれていません。</span><span data-lang="en">The value of a selected element is sent to the backend URL you configured in the options page, authenticated with the token you configured there. It is never sent anywhere else. The extension contains no analytics, advertising, or tracking SDKs.</span></p>
+  </div>
+
+  <div class="policy-section">
+    <h2>
+      <span data-lang="ja">4. ページへのアクセス権限について</span>
+      <span data-lang="en">4. About Website Access Permissions</span>
+    </h2>
+    <p><span data-lang="ja">この拡張機能は、任意のWebサイトを監視対象として選択できるようにするため、すべてのサイトへのアクセス権限を要求します。この権限は以下の目的にのみ使用されます：</span><span data-lang="en">This extension requests access to all websites so that you can choose to monitor any page you like. This access is used only to:</span></p>
+    <ul>
+      <li data-lang="ja">利用者が拡張機能を開いて選択操作を行ったページのDOMを読み取り、選択候補をハイライト表示するため</li>
+      <li data-lang="en">Read the DOM of a page you've opened the extension on, so it can highlight candidate elements as you hover and click</li>
+      <li data-lang="ja">「ローカル実行モード」に設定したMonitorについて、Chromeが起動している間、バックグラウンドタブで該当ページを開いて確認するため（この場合もページ全体ではなく設定済みの範囲のみを抽出します）</li>
+      <li data-lang="en">For Monitors set to "local" execution mode, open the page in a background tab (while Chrome is running) to re-check it — even then, only the configured selection is extracted, never the whole page</li>
+    </ul>
+    <p><span data-lang="ja">拡張機能が能動的に全サイトを巡回・監視することはありません。利用者が明示的に選択・設定したページのみが対象です。</span><span data-lang="en">The extension never proactively crawls or monitors sites on its own — only pages you have explicitly selected or configured are ever touched.</span></p>
+  </div>
+
+  <div class="policy-section">
+    <h2>
+      <span data-lang="ja">5. 対象外とする用途</span>
+      <span data-lang="en">5. Out of Scope by Design</span>
+    </h2>
+    <p><span data-lang="ja">本ソフトウェアは、CAPTCHA回避、アクセス制御の回避、ペイウォール回避、その他サイト側の制限を回避する目的の機能を実装していません。またログインを必要とするページの監視は想定していません。</span><span data-lang="en">This software implements no CAPTCHA bypass, access-control bypass, paywall bypass, or other functionality designed to evade a site's own restrictions. It is not designed to monitor pages that require a login.</span></p>
+  </div>
+
+  <div class="policy-section">
+    <h2>
+      <span data-lang="ja">6. オープンソースであること</span>
+      <span data-lang="en">6. Open Source</span>
+    </h2>
+    <p><span data-lang="ja">拡張機能とバックエンドのソースコードはすべて<a href="https://github.com/isitest1/web-monitor-rss">GitHubで公開</a>されています。このポリシーの記述内容は、実際のコードで検証いただけます。</span><span data-lang="en">The full source code for both the extension and the backend is <a href="https://github.com/isitest1/web-monitor-rss">public on GitHub</a>. Everything stated in this policy can be verified against the actual code.</span></p>
+  </div>
+
+  <div class="policy-section">
+    <h2>
+      <span data-lang="ja">7. 子供のプライバシー</span>
+      <span data-lang="en">7. Children's Privacy</span>
+    </h2>
+    <p><span data-lang="ja">本拡張機能は13歳未満の子供を対象としておらず、意図的に情報を収集することはありません。</span><span data-lang="en">This extension is not directed at children under 13 and does not knowingly collect information from them.</span></p>
+  </div>
+
+  <div class="policy-section">
+    <h2>
+      <span data-lang="ja">8. ポリシーの変更</span>
+      <span data-lang="en">8. Changes to This Policy</span>
+    </h2>
+    <p><span data-lang="ja">ポリシーを変更する場合は、このページに掲載します。</span><span data-lang="en">If this policy changes, updates will be posted on this page.</span></p>
+  </div>
+
+  <div class="policy-section">
+    <h2>
+      <span data-lang="ja">9. お問い合わせ</span>
+      <span data-lang="en">9. Contact</span>
+    </h2>
+    <p><span data-lang="ja">プライバシーに関するご質問は下記メールアドレスまでお気軽にお問い合わせください。</span><span data-lang="en">For any questions about this privacy policy, please contact:</span></p>
+    <p><a href="mailto:support@margheritaworks.com">support@margheritaworks.com</a></p>
+  </div>
+
+</div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="index.html">
+      <span data-lang="ja">サポートページ</span>
+      <span data-lang="en">Support</span>
+    </a>
+    <a href="mailto:support@margheritaworks.com">
+      <span data-lang="ja">お問い合わせ</span>
+      <span data-lang="en">Contact</span>
+    </a>
+    <a href="https://isitest1.github.io/portfolio-hub/ja" data-lang="ja">Kohei Ishikawa のポートフォリオ</a>
+    <a href="https://isitest1.github.io/portfolio-hub/en" data-lang="en">Kohei Ishikawa's Portfolio</a>
+  </div>
+  <p>
+    <span data-lang="ja">© 2026 Margherita Works by Kohei Ishikawa. All rights reserved.</span>
+    <span data-lang="en">© 2026 Margherita Works by Kohei Ishikawa. All rights reserved.</span>
+  </p>
+</footer>
+
+<script>
+function setLang(lang) {
+  document.body.classList.toggle('en', lang === 'en');
+  document.getElementById('btn-ja').classList.toggle('active', lang === 'ja');
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  document.documentElement.lang = lang;
+  localStorage.setItem('lang', lang);
+}
+const saved = localStorage.getItem('lang');
+if (saved === 'en') setLang('en');
+</script>
+</body>
+</html>

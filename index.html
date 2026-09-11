@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-lang="ja">Web Monitor RSS – サポート</title>
+  <title data-lang="en">Web Monitor RSS – Support</title>
+  <meta name="description" content="Web Monitor RSS サポートページ。使い方・よくある質問・お問い合わせ。">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="lang-bar">
+  <button class="lang-btn active" onclick="setLang('ja')" id="btn-ja">日本語</button>
+  <button class="lang-btn"        onclick="setLang('en')" id="btn-en">English</button>
+</div>
+
+<header class="site-header">
+  <div class="app-icon"><img src="assets/app-icon.png" alt="Web Monitor RSS" width="96" height="96" style="border-radius:22px;"></div>
+  <h1>Web Monitor RSS</h1>
+  <p class="tagline">
+    <span data-lang="ja">好きなページの好きな部分を選んで、変わったら通知するRSSフィードに</span>
+    <span data-lang="en">Select any part of any page. Get a private RSS feed when it changes.</span>
+  </p>
+  <p style="margin-top:20px;">
+    <a class="btn-hero" href="https://github.com/isitest1/web-monitor-rss">
+      <span data-lang="ja">GitHubで見る（無料・オープンソース）</span>
+      <span data-lang="en">View on GitHub (free, open source)</span>
+    </a>
+  </p>
+</header>
+
+<main>
+
+<!-- What it is -->
+<section>
+  <div class="container">
+    <p class="section-label">
+      <span data-lang="ja">これは何？</span>
+      <span data-lang="en">What is this?</span>
+    </p>
+    <h2 class="section-title">
+      <span data-lang="ja">RSSを配信していないページも、監視できる</span>
+      <span data-lang="en">Turn any webpage into an RSS feed — even one with no feed of its own</span>
+    </h2>
+    <p style="max-width:640px;margin:0 auto 8px;line-height:1.8;">
+      <span data-lang="ja">価格表の1行、お知らせページの新着だけ、在庫状況——ページ全体ではなく「ここだけ」を見たいことは多いはずです。Web Monitor RSSのChrome拡張機能は、ページ上でクリックするだけでその範囲を選択でき、変更があったときだけRSSフィードに届きます。</span>
+      <span data-lang="en">A single price, just the newest entry on a notices page, a stock-status line — often you only care about one small part of a page, not the whole thing. Web Monitor RSS's Chrome extension lets you point-and-click the exact element you care about, and delivers a private RSS item only when it actually changes.</span>
+    </p>
+    <p style="max-width:640px;margin:0 auto;line-height:1.8;">
+      <span data-lang="ja">本体はオープンソースで、Cloudflare Workers上にご自身でデプロイして使う自己ホスト型のツールです。データは開発者（Margherita Works）には一切送信されません——利用者ご自身が用意したバックエンドにのみ送られます。</span>
+      <span data-lang="en">The backend is open source and self-hosted — you deploy your own copy to Cloudflare Workers. No data is ever sent to the developer (Margherita Works); it only ever goes to the backend URL you configure yourself.</span>
+    </p>
+  </div>
+</section>
+
+<!-- Screenshots -->
+<section>
+  <div class="container">
+    <p class="section-label">
+      <span data-lang="ja">スクリーンショット</span>
+      <span data-lang="en">Screenshots</span>
+    </p>
+    <h2 class="section-title">
+      <span data-lang="ja">拡張機能の画面</span>
+      <span data-lang="en">The Extension</span>
+    </h2>
+    <div class="screenshots">
+      <div class="screenshot-item">
+        <img class="ss-img" src="assets/screenshots/ss01_selector_overlay.png" alt="Visual Selector overlay" loading="lazy">
+        <p class="screenshot-caption">
+          <span data-lang="ja">ページ上でクリックして範囲を選択</span>
+          <span data-lang="en">Click to select a part of any page</span>
+        </p>
+      </div>
+      <div class="screenshot-item">
+        <img class="ss-img" src="assets/screenshots/ss02_multiple_selections.png" alt="Multiple selections" loading="lazy">
+        <p class="screenshot-caption">
+          <span data-lang="ja">複数の範囲をラベル付きで登録</span>
+          <span data-lang="en">Add multiple labeled selections per Monitor</span>
+        </p>
+      </div>
+      <div class="screenshot-item">
+        <img class="ss-img" src="assets/screenshots/ss03_popup_watchlist.png" alt="Watchlist popup" loading="lazy">
+        <p class="screenshot-caption">
+          <span data-lang="ja">登録済みMonitorの状態を一覧表示</span>
+          <span data-lang="en">See all your Monitors at a glance</span>
+        </p>
+      </div>
+      <div class="screenshot-item">
+        <img class="ss-img" src="assets/screenshots/ss04_options.png" alt="Options page" loading="lazy">
+        <p class="screenshot-caption">
+          <span data-lang="ja">ご自身のWorker URLとトークンを設定</span>
+          <span data-lang="en">Point it at your own Worker URL and token</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Getting started -->
+<section>
+  <div class="container">
+    <p class="section-label">
+      <span data-lang="ja">はじめかた</span>
+      <span data-lang="en">Getting Started</span>
+    </p>
+    <h2 class="section-title">
+      <span data-lang="ja">10分でセットアップ</span>
+      <span data-lang="en">Set Up in About 10 Minutes</span>
+    </h2>
+    <ol style="max-width:640px;margin:0 auto;line-height:2;">
+      <li>
+        <span data-lang="ja">この拡張機能をインストールする（Chrome ウェブストア）</span>
+        <span data-lang="en">Install this extension (Chrome Web Store)</span>
+      </li>
+      <li>
+        <span data-lang="ja"><a href="https://github.com/isitest1/web-monitor-rss">GitHubリポジトリ</a>の「Deploy to Cloudflare」ボタンから、ご自身のCloudflareアカウントにバックエンドをデプロイする</span>
+        <span data-lang="en">Deploy your own backend via the "Deploy to Cloudflare" button on the <a href="https://github.com/isitest1/web-monitor-rss">GitHub repository</a></span>
+      </li>
+      <li>
+        <span data-lang="ja">拡張機能のオプション画面に、デプロイされたWorker URLとトークンを入力する</span>
+        <span data-lang="en">Enter your deployed Worker URL and token in the extension's options page</span>
+      </li>
+      <li>
+        <span data-lang="ja">監視したいページで拡張機能を開き、範囲を選んで保存する</span>
+        <span data-lang="en">Open the extension on any page you want to watch, select an element, and save</span>
+      </li>
+    </ol>
+    <p style="text-align:center;margin-top:24px;">
+      <a class="btn" href="https://github.com/isitest1/web-monitor-rss/blob/main/QUICKSTART.md">
+        <span data-lang="ja">詳しい手順（QUICKSTART.md）</span>
+        <span data-lang="en">Full walkthrough (QUICKSTART.md)</span>
+      </a>
+    </p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="container">
+    <p class="section-label">FAQ</p>
+    <h2 class="section-title">
+      <span data-lang="ja">よくある質問</span>
+      <span data-lang="en">Frequently Asked Questions</span>
+    </h2>
+
+    <div class="faq-item">
+      <p class="faq-q"><span data-lang="ja">Q. 無料で使えますか？</span><span data-lang="en">Q. Is this free to use?</span></p>
+      <p class="faq-a"><span data-lang="ja">拡張機能自体は無料です。バックエンドはご自身のCloudflareアカウントにデプロイするため、Cloudflareの無料枠の範囲で個人利用であればほぼ無料で運用できます。</span><span data-lang="en">The extension itself is free. The backend runs on your own Cloudflare account — for personal use, it comfortably fits within Cloudflare's free tier.</span></p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q"><span data-lang="ja">Q. Margherita Worksがホスティングしてくれるサービスはありますか？</span><span data-lang="en">Q. Do you offer a hosted version I can just sign up for?</span></p>
+      <p class="faq-a"><span data-lang="ja">いいえ。現時点でホスト型サービスとして運営する予定はありません。オープンソースのコードをご自身でデプロイしてお使いいただく形のみです。</span><span data-lang="en">No — there is no plan to run this as a hosted service. It's open source software you deploy and run yourself.</span></p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q"><span data-lang="ja">Q. ログインが必要なページも監視できますか？</span><span data-lang="en">Q. Can it monitor pages behind a login?</span></p>
+      <p class="faq-a"><span data-lang="ja">いいえ。ログイン情報・Cookie・セッションを保存する機能はなく、公開ページのみを対象としています。</span><span data-lang="en">No. It never stores login credentials, cookies, or sessions, and is designed only for public pages that don't require a login.</span></p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q"><span data-lang="ja">Q. CAPTCHAやBot対策を回避しますか？</span><span data-lang="en">Q. Does it bypass CAPTCHAs or bot detection?</span></p>
+      <p class="faq-a"><span data-lang="ja">いいえ。ステルス機能や回避目的の実装は一切行っていません。サイト側にブロックされた場合は、その旨がエラーとして記録されます。</span><span data-lang="en">No. It implements no stealth or evasion techniques. If a site blocks automated access, that's recorded as an error, not worked around.</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section>
+  <div class="container">
+    <p class="section-label">
+      <span data-lang="ja">お問い合わせ</span>
+      <span data-lang="en">Contact</span>
+    </p>
+    <h2 class="section-title">
+      <span data-lang="ja">サポートへのお問い合わせ</span>
+      <span data-lang="en">Get in Touch</span>
+    </h2>
+    <div class="contact-box">
+      <p><span data-lang="ja">バグ報告・機能リクエストはGitHubのIssueへ、その他のご質問はメールでお気軽にどうぞ。</span><span data-lang="en">Bug reports and feature requests are welcome as GitHub Issues; general questions are welcome via email.</span></p>
+      <p style="margin-top:12px;">
+        <a class="btn" href="https://github.com/isitest1/web-monitor-rss/issues">GitHub Issues</a>
+        <a class="btn" href="mailto:support@margheritaworks.com" style="margin-left:8px;">
+          <span data-lang="ja">メールで問い合わせる</span>
+          <span data-lang="en">Send an Email</span>
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="privacy.html">
+      <span data-lang="ja">プライバシーポリシー</span>
+      <span data-lang="en">Privacy Policy</span>
+    </a>
+    <a href="mailto:support@margheritaworks.com">
+      <span data-lang="ja">お問い合わせ</span>
+      <span data-lang="en">Contact</span>
+    </a>
+    <a href="https://isitest1.github.io/portfolio-hub/ja" data-lang="ja">Kohei Ishikawa のポートフォリオ</a>
+    <a href="https://isitest1.github.io/portfolio-hub/en" data-lang="en">Kohei Ishikawa's Portfolio</a>
+  </div>
+  <p>
+    <span data-lang="ja">© 2026 Margherita Works by Kohei Ishikawa. All rights reserved.</span>
+    <span data-lang="en">© 2026 Margherita Works by Kohei Ishikawa. All rights reserved.</span>
+  </p>
+</footer>
+
+<script>
+function setLang(lang) {
+  document.body.classList.toggle('en', lang === 'en');
+  document.getElementById('btn-ja').classList.toggle('active', lang === 'ja');
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  document.documentElement.lang = lang;
+  localStorage.setItem('lang', lang);
+}
+const saved = localStorage.getItem('lang');
+if (saved === 'en') setLang('en');
+</script>
+</body>
+</html>
