@@ -2,7 +2,7 @@
 
 Support and privacy policy pages for the "Web Monitor RSS - Visual Selector" Chrome extension, and reference assets/copy for its Chrome Web Store listing.
 
-Hosted via GitHub Pages at: `https://webmonitorrss.margheritaworks.com/` (until the DNS CNAME is added, it's also reachable at `https://isitest1.github.io/web-monitor-rss-support/`).
+Hosted via GitHub Pages at: `https://webmonitorrss.margheritaworks.com/`.
 
 ## Pages
 
@@ -12,6 +12,7 @@ Hosted via GitHub Pages at: `https://webmonitorrss.margheritaworks.com/` (until 
 
 ## Chrome Web Store links
 
+- Listing (published, approved): <https://chromewebstore.google.com/detail/web-monitor-rss-visual-se/cmeiflbjigiaalobggjdhcaekdbcakah>
 - Privacy Policy URL: `https://webmonitorrss.margheritaworks.com/privacy.html`
 - Support URL: `https://webmonitorrss.margheritaworks.com/`
 
